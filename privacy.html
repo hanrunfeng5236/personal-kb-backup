@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="How Personal KB Backup handles Google Drive data and local authorization.">
+  <title>Privacy policy · Personal KB Backup</title>
+  <style>body{max-width:760px;margin:0 auto;padding:48px 24px;font:17px/1.65 system-ui,sans-serif;color:#243143;background:#fbfcfe}nav,footer{font-size:.9rem}nav{display:flex;gap:22px;flex-wrap:wrap}a{color:#175ca4}h1{font-size:2.3rem;line-height:1.2;letter-spacing:-.03em;margin-top:54px}h2{font-size:1.25rem;margin-top:32px}footer{margin-top:52px;padding-top:20px;border-top:1px solid #dce3eb;color:#637184}li{margin:8px 0}</style>
+</head>
+<body>
+  <nav aria-label="Main navigation"><a href="./">Home</a><a href="privacy.html" aria-current="page">Privacy policy</a><a href="terms.html">Terms of use</a></nav>
+  <main>
+    <h1>Privacy policy</h1>
+    <p>Effective 25 October 2026. This policy describes Personal KB Backup, a local, personal-use backup utility, and this public information website.</p>
+    <h2>Data used and purpose</h2>
+    <p>The utility processes the owner's selected knowledge-base documents, file names, and file metadata only to create, update, manage, download, and verify backups in the owner's Google Drive. It uses the Google Drive <code>drive.file</code> scope, limited to files created by this application or explicitly made available to it by the user.</p>
+    <h2>Where data is stored</h2>
+    <p>rclone runs on the owner's Windows computer. Backup data is transferred directly between that computer and the owner's Google Drive. OAuth tokens are kept in a restricted local configuration directory. Tokens and backup contents are not uploaded to this website or its source repository.</p>
+    <h2>No advertising, analytics, or sale of data</h2>
+    <p>The utility does not use backup contents for analytics, advertising, or model training. It does not sell or share those contents with other people or unrelated services. Google processes files as the selected storage provider under its own <a href="https://policies.google.com/privacy">privacy policy</a>.</p>
+    <h2>Retention and user control</h2>
+    <p>Backups remain in the owner's Google Drive until the owner removes them or uses their configured backup-management rules. The owner can revoke the application's access in <a href="https://myaccount.google.com/connections">Google Account connections</a> at any time and can delete backed-up files directly in Google Drive. Revoking access stops future authorized access; it does not itself delete existing backups. Local authorization can also be removed from the owner's rclone configuration.</p>
+    <h2>This public website</h2>
+    <p>This site has no upload forms, tracking scripts, analytics, advertisements, or application cookies. It is hosted on GitHub Pages. GitHub may process normal hosting and security logs, including request information, under the <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">GitHub Privacy Statement</a>. The website is not a storage location for backups.</p>
+  </main>
+  <footer><a href="./">Personal KB Backup</a> · Public privacy information</footer>
+</body>
+</html>
